@@ -1,0 +1,1114 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2638
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\froman\fcharset0 TimesNewRomanPSMT;\f2\froman\fcharset0 Times-Roman;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c100000\c100000\c100000;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28600\viewh18000\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs26 \cf0 1).\
+\
+\
+* * \
+*\
+*\
+*\
+* * * * \
+*\
+*\
+*\
+*\
+*\
+*\
+* * * * * * \
+\
+\
+#include <stdio.h>\
+\
+void main()\
+\{\
+    int n=3, i, j, k;\
+    \
+    for(i=1; i<=n; i++)\
+    \{\
+        for(k=1; k<=2*i; k++)\
+        \{\
+            printf("* ");\
+        \}\
+        printf("\\n");\
+        if(i==n)\
+        \{\
+            break;\
+        \}\
+        for(j=1; j<=3*i; j++)\
+        \{\
+            printf("*\\n");\
+        \}\
+        \
+    \}\
+\}\
+\
+\
+2).\
+\
+\
+* * * \
+*\
+* * * * * * \
+*\
+*\
+* * * * * * * * * \
+*\
+*\
+*\
+\
+\
+#include <stdio.h>\
+\
+void main()\
+\{\
+    int n=3, i, j, k;\
+    for(i=1; i<=n; i++)\
+    \{\
+        for(j=1; j<=3*i; j++)\
+        \{\
+            printf("* ");\
+        \}\
+        printf("\\n");\
+        for(k=1; k<=i; k++)\
+        \{\
+            printf("*\\n");\
+        \}\
+    \}\
+\}\
+\
+\
+3).\
+\
+*\
+* \
+* * * \
+* * \
+* * \
+* * * * * * \
+* * * \
+* * * \
+* * * \
+* * * * * * * * * \
+\
+\
+#include <stdio.h>\
+\
+void main()\
+\{\
+    int n=3, i, j, k;\
+    printf("*");\
+    for(i=0; i<=n; i++)\
+    \{\
+        for(j=1; j<=i; j++)\
+        \{\
+            for(k=1; k<=i; k++)\
+            \{\
+                printf("* ");\
+            \}\
+            printf("\\n");\
+        \}\
+        for(j=1; j<=3*i; j++)\
+        \{\
+            printf("* ");\
+        \}\
+        printf("\\n");\
+    \}\
+\}\
+\
+\
+4).\
+\
+*\
+* * * * \
+*\
+*\
+* * * * * * * * \
+*\
+*\
+*\
+* * * * * * * * * * * * \
+\
+#include <stdio.h>\
+\
+void main()\
+\{\
+    int n=3, i, j;\
+    for(i=1; i<=n; i++)\
+    \{\
+        for(j=1; j<=i; j++)\
+        \{\
+            printf("*\\n");\
+        \}\
+        for(j=1; j<=4*i; j++)\
+        \{\
+            printf("*");\
+        \}\
+        printf("\\n");\
+    \}\
+    \
+\}\
+\
+\
+5).\
+\
+* * * \
+*\
+*\
+*\
+* * * * * * \
+*\
+*\
+*\
+*\
+*\
+*\
+* * * * * * * * *\
+\
+#include <stdio.h>\
+\
+void main()\
+\{\
+    int n=3, i,j;\
+    for(i=0; i<=n; i++)\
+    \{\
+        for(j=1; j<=3*i; j++)\
+        \{\
+            printf("* ");\
+        \}\
+        printf("\\n");\
+        if(i==n)\
+        \{\
+            break;\
+        \}\
+        for(j=1; j<=3*i; j++)\
+        \{\
+            printf("* ");\
+            printf("\\n");\
+        \}\
+    \}\
+\}\
+\
+\
+6).\
+\
+\
+* * * * * * * * * * \
+*\
+* * * * * * * * \
+*\
+*\
+* * * * * * \
+*\
+*\
+*\
+* * * * \
+*\
+*\
+*\
+*\
+* * \
+*\
+*\
+*\
+*\
+*\
+\
+\
+#include <stdio.h>\
+\
+void main()\
+\{\
+    int n=5, i, j, k;\
+    for(i=0; i<n; i++)\
+    \{\
+        for(j=1; j<=(2*n)-(2*i); j++)\
+        \{\
+            printf("* ");\
+        \}\
+        printf("\\n");\
+        for(j=0; j<=i; j++)\
+        \{\
+            printf("*");\
+            printf("\\n");\
+        \}\
+    \}\
+\}\
+\
+\
+7).\
+\
+* * * * * \
+*\
+*\
+*\
+* * * * * * * * * * \
+*\
+*\
+*\
+*\
+*\
+*\
+* * * * * * * * * * * * * * * \
+\
+\
+\
+#include <stdio.h>\
+\
+int main() \{\
+    int n=3, i, j;\
+    for(i=1; i<=n; i++)\
+    \{\
+        for(j=1; j<=5*i; j++)\
+        \{\
+            printf("* ");\
+        \}\
+        printf("\\n");\
+        if(i==n)\
+        \{\
+            break;\
+        \}\
+        for(j=1; j<=3*i; j++)\
+        \{\
+            printf("*");\
+            printf("\\n");\
+        \}\
+    \}\
+\}\
+\
+\
+8). Program mistake\
+\
+9).\
+\
+\
+* * \
+*\
+* * * * \
+*\
+*\
+*\
+* * * * * * * * \
+*\
+*\
+*\
+*\
+*\
+\
+\
+#include <stdio.h>\
+#include <math.h>\
+\
+int main() \
+\{\
+    int n=3, i, j, k=1;\
+    for(i=1; i<=n; i++)\
+    \{\
+        for(j=1; j<=pow(2,i); j++)\
+        \{\
+            printf("* ");\
+        \}\
+        printf("\\n");\
+        for(j=1; j<=k; j++)\
+        \{\
+            printf("*");\
+            printf("\\n");\
+        \}\
+        k=k+2;\
+    \}\
+\}\
+\
+10).\
+\
+* * * * * \
+*\
+*\
+* * * * * * * * * * \
+*\
+*\
+*\
+*\
+* * * * * * * * * * * * * * * \
+*\
+*\
+*\
+*\
+*\
+*\
+\
+\
+#include <stdio.h>\
+\
+int main() \
+\{\
+    int n=3, i, j;\
+    for(i=1; i<=n; i++)\
+    \{\
+        for(j=1; j<=5*i; j++)\
+        \{\
+            printf("* ");\
+        \}\
+        printf("\\n");\
+        for(j=1; j<=2*i; j++)\
+        \{\
+            printf("*");\
+            printf("\\n");\
+        \}\
+    \}\
+    \
+\}\
+\
+\
+11).\
+\
+*\
+* * \
+*\
+*\
+*\
+* * * * \
+*\
+* * * * * * \
+*\
+*\
+*\
+* * * * * * * * \
+\
+\
+#include <stdio.h>\
+\
+int main() \
+\{\
+    int n=4, i, j, k=1, l=2;\
+    for(i=1; i<=n; i++)\
+    \{\
+        for(j=1; j<=k; j++)\
+        \{\
+            printf("*\\n");\
+        \}\
+        if(k==1)\
+        \{\
+            k=3;\
+        \}\
+        else if(k==3)\
+        \{\
+            k=1;\
+        \}\
+        for(j=1; j<=l; j++)\
+        \{\
+            printf("* ");\
+        \}\
+        printf("\\n");\
+        l=l+2;\
+    \}\
+    \
+\}\
+\
+\
+12).\
+\
+\
+* * * * * * * \
+* *       *  * \
+*   *   *    * \
+*     *      * \
+*   *   *    * \
+* *       *  * \
+* * * * * * *\
+\
+\
+#include <stdio.h>\
+\
+void main()\
+\{\
+    int n=7, i, j;\
+    for(i=1; i<=n; i++)\
+    \{\
+        for(j=1; j<=n; j++)\
+        \{\
+            if(i==1 || i==n || j==1 || j==n || i==j || i+j==n+1)\
+            \{\
+                printf("* ");\
+            \}\
+            else\
+            \{\
+                printf("  ");\
+            \}\
+        \}\
+         printf("\\n");\
+    \}\
+\}\
+\
+\
+\
+\
+13).\
+\
+* \
+* \
+* * * \
+* * \
+* * \
+* * * * * * \
+* * * \
+* * * \
+* * * * * * * * *\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 #include <stdio.h>\
+\
+void main()\
+\{\
+    int n=3, i, j, k;\
+    for(i=1; i<=n; i++)\
+    \{\
+        for(j=1; j<=2; j++)\
+        \{\
+            for(k=1; k<=i; k++)\
+            \{\
+                printf("* ");\
+            \}\
+            printf("\\n");\
+        \}\
+        for(j=1; j<=3*i; j++)\
+        \{\
+            printf("* ");\
+        \}\
+        printf("\\n");\
+    \}\
+\}\
+\
+\
+14).\
+\
+* * * * * \
+*\
+*\
+*\
+* * * * * * * * * * \
+*\
+*\
+*\
+*\
+*\
+*\
+* * * * * * * * * * * * * * * \
+\
+\
+\
+#include <stdio.h>\
+\
+void main()\
+\{\
+    int n=3, i, j;\
+    for(i=1; i<=n; i++)\
+    \{\
+        for(j=1; j<=5*i; j++)\
+        \{\
+            printf("* ");\
+        \}\
+        printf("\\n");\
+        if(i==n)\
+        \{\
+            break;\
+        \}\
+        for(j=1; j<=3*i; j++)\
+        \{\
+            printf("*\\n");\
+        \}\
+    \}\
+\}\
+\
+\
+15). Program mistake\
+\
+16).\
+\
+\
+* \
+* * \
+* \
+* \
+* \
+* * * * \
+* \
+* * * * * * \
+* \
+* \
+* \
+* * * * * * * * \
+\
+\
+#include <stdio.h>\
+\
+int main() \{\
+    int n=4, i, j, l=1;\
+    for(i=1; i<=n; i++)\
+    \{\
+        for(j=1; j<=l; j++)\
+        \{\
+            printf("* ");\
+            printf("\\n");\
+        \}\
+        if(l==1)\
+        \{\
+            l=3;\
+        \}\
+        else if(l==3)\
+        \{\
+            l=1;\
+        \}\
+        for(j=1; j<=2*i; j++)\
+        \{\
+            printf("* ");\
+        \}\
+        printf("\\n");\
+    \}\
+\}\
+\
+\
+\
+17).\
+\
+* * * \
+*\
+*\
+*\
+* * * * * * \
+* * * * * * \
+*\
+*\
+*\
+* * * * * * * * * \
+* * * * * * * * * \
+* * * * * * * * * \
+\
+\
+#include <stdio.h>\
+\
+int main() \{\
+    int n=3, i, j, k;\
+    for(i=1; i<=n; i++)\
+    \{\
+        for(j=1; j<=i; j++)\
+        \{\
+            for(k=1; k<=3*i; k++)\
+            \{\
+                printf("* ");\
+            \}\
+            printf("\\n");\
+        \}\
+        if(i==n)\
+        \{\
+            break;\
+        \}\
+        for(j=1; j<=3; j++)\
+        \{\
+            printf("*\\n");\
+        \}\
+    \}\
+\}\
+\
+\
+18).\
+\
+\
+* * * \
+* * * \
+*\
+* * * * * * \
+* * * * * * \
+*\
+*\
+* * * * * * * * * \
+* * * * * * * * * \
+*\
+*\
+*\
+* * * * * * * * * * * * \
+* * * * * * * * * * * * \
+*\
+*\
+*\
+*\
+* * * * * * * * * * * * * * * \
+* * * * * * * * * * * * * * * \
+\
+\
+#include <stdio.h>\
+\
+int main() \{\
+    int n=5, i, j, k;\
+    for(i=1; i<=n; i++)\
+    \{\
+        for(j=1; j<=2; j++)\
+        \{\
+            for(k=1; k<=3*i; k++)\
+            \{\
+                printf("* ");\
+            \}\
+            printf("\\n");\
+        \}\
+        if(i==n)\
+        \{\
+            break;\
+        \}\
+        for(j=1; j<=i; j++)\
+        \{\
+            printf("*\\n");\
+        \}\
+    \}\
+\}\
+\
+\
+\
+19).\
+\
+* * * * \
+*\
+* * * * * * * * \
+*\
+*\
+* * * * * * * * * * * * \
+*\
+*\
+*\
+* * * * * * * * * * * * * * * * \
+\
+\
+#include <stdio.h>\
+\
+int main() \{\
+    int n=4, i, j, k;\
+    for(i=1; i<=n; i++)\
+    \{\
+        for(j=1; j<=4*i; j++)\
+        \{\
+            printf("* ");\
+        \}\
+        printf("\\n");\
+        if(i==n)\
+        \{\
+            break;\
+        \}\
+        for(j=1; j<=i; j++)\
+        \{\
+            printf("*\\n");\
+        \}\
+    \}\
+\}\
+\
+\
+20).\
+\
+\
+* * \
+* * * * * \
+* * \
+* * \
+* * * * * * * * * * \
+* * \
+* * \
+* * \
+* * * * * * * * * * * * * * * \
+* * \
+* * \
+* * \
+* * \
+\
+ \
+#include <stdio.h>\
+\
+int main() \{\
+    int n=4, i, r, c, j;\
+    for(i=1; i<=n; i++)\
+    \{\
+        for(r=1; r<=i; r++)\
+        \{\
+            for(c=1; c<=2; c++)\
+            \{\
+                printf("* ");\
+            \}\
+            printf("\\n");\
+        \}\
+        for(j=1; j<=5*i && i!=n; j++)\
+        \{\
+            printf("* ");\
+        \}\
+        printf("\\n");\
+    \}\
+\}\
+\
+21).\
+\
+\
+\
+22).\
+\
+\
+X \
+X X \
+_ X X \
+X X \
+X X \
+_ _ X X X X \
+X X \
+X X \
+X X \
+_ _ _ X X X X X X X X \
+\
+\
+\
+#include <stdio.h>\
+\
+int main() \{\
+    int n=3, i, r, c, j, k;\
+    for(i=0; i<=n; i++)\
+    \{\
+        for(r=1; r<=i; r++)\
+        \{\
+            for(c=1; c<=2; c++)\
+            \{\
+                printf("X ");\
+            \}\
+            printf("\\n");\
+        \}\
+        for(j=1; j<=i; j++)\
+        \{\
+            printf("_ ");\
+        \}\
+        for(k=1; k<=pow(2,i); k++)\
+        \{\
+            printf("X ");\
+        \}\
+        printf("\\n");\
+    \}\
+\}\
+\
+\
+23).\
+\
+X X X X _ _\
+_ X X X X \
+X\
+X X X _ _\
+_ X X X \
+X\
+X\
+X X _ _\
+_ X X \
+X\
+X\
+X\
+X _ _\
+_ X \
+X\
+X\
+X\
+X\
+\
+\
+#include <stdio.h>\
+\
+void main() \
+\{\
+    int n=4, i, j;\
+    for(i=1; i<=n; i++)\
+    \{\
+        for(j=i; j<=n; j++)\
+        \{\
+            printf("X ");\
+        \}\
+        printf("_ _\\n_ ");\
+        for(j=i; j<=n; j++)\
+        \{\
+            printf("X ");\
+        \}\
+        printf("\\n");\
+        for(j=1; j<=i; j++)\
+        \{\
+            printf("X\\n");\
+        \}\
+    \}\
+\}\
+\
+\
+\
+24).\
+\
+X X X X \
+X X X \
+X\
+X\
+X X X \
+X X \
+X\
+X\
+X X \
+X \
+\
+#include <stdio.h>\
+\
+void main() \
+\{\
+    int n=3, i, j, k=n+1;\
+    for(i=1; i<=n; i++)\
+    \{\
+        for(j=k; j>=1; j--)\
+        \{\
+            printf("X ");\
+        \}\
+        printf("\\n");\
+        k--;\
+        for(j=k; j>=1; j--)\
+        \{\
+            printf("X ");\
+        \}\
+        printf("\\n");\
+        for(j=1; j<=2 && i!=n; j++)\
+        \{\
+            printf("X\\n");\
+        \}\
+    \}\
+\}\
+\
+\
+25).\
+\
+
+\fs28 * * * * * \
+*\
+* * * * * \
+*\
+*\
+* * * * * \
+*\
+*\
+*\
+* * * * * \
+*\
+*\
+*\
+*\
+* * * * * 
+\fs26 \
+\
+#include <stdio.h>\
+\
+void main() \
+\{\
+    int n=5, i, j;\
+    for(i=1; i<=n; i++)\
+    \{\
+        for(j=1; j<=5; j++)\
+        \{\
+            printf("* ");\
+        \}\
+        printf("\\n");\
+        for(j=1; j<=i && i!=n; j++)\
+        \{\
+            printf("*\\n");\
+        \}\
+    \}\
+\}\
+\
+\
+26).\
+\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
+* * \
+* * \
+* * * * * \
+* * \
+* * \
+* * * * * * * * * * \
+* * \
+* * \
+* * * * * * * * * * * * * * * \
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 #include <stdio.h>\
+\
+void main() \
+\{\
+    int n=3, i, j, k;\
+    for(i=1; i<=n; i++)\
+    \{\
+        for(j=1; j<=2; j++)\
+        \{\
+            for(k=1; k<=2; k++)\
+            \{\
+                printf("* ");\
+            \}\
+            printf("\\n");\
+        \}\
+        for(j=1; j<=5*i; j++)\
+        \{\
+            printf("* ");\
+        \}\
+        printf("\\n");\
+    \}\
+\}\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 27).\
+\
+* * * \
+* * * \
+*\
+*\
+*\
+* * * * * * \
+* * * * * * \
+*\
+*\
+*\
+* * * * * * * * * \
+* * * * * * * * * \
+\
+#include <stdio.h>\
+\
+void main() \
+\{\
+    int n=3, i, r, c, j;\
+    for(i=1; i<=n; i++)\
+    \{\
+       for(r=1; r<=2; r++)\
+       \{\
+           for(c=1; c<=3*i; c++)\
+           \{\
+               printf("* ");\
+           \}\
+           printf("\\n");\
+       \}\
+       for(j=1; j<=3 && i!=n; j++)\
+       \{\
+           printf("*\\n");\
+       \}\
+    \}\
+\}\
+\
+\
+28).\
+\
+*\
+* * * \
+*\
+* * * \
+* * * \
+*\
+* * * \
+* * * \
+* * * \
+*\
+* * * \
+* * * \
+* * * \
+* * * \
+\
+\
+#include <stdio.h>\
+\
+void main() \
+\{\
+    int n=4, i, r, c;\
+    for(i=1; i<=n; i++)\
+    \{\
+        printf("*\\n");\
+        for(r=1; r<=i; r++)\
+        \{\
+            for(c=1; c<=3; c++)\
+            \{\
+                printf("* ");\
+            \}\
+            printf("\\n");\
+        \}\
+    \}\
+    \
+\}\
+\
+\
+\
+29).  \
+\
+\
+* * * * \
+* * \
+* * * * * * * * \
+* * \
+* * * * * * * * * * * * \
+* * \
+* * * * * * * * * * * * * * * *\
+
+\f2\fs24 \cf2 \expnd0\expndtw0\kerning0
+\
+\
+#include <stdio.h>\
+\
+void main() \
+\{\
+    int n=4, i, j;\
+    for(i=1; i<=n; i++)\
+    \{\
+        for(j=1; j<=4*i; j++)\
+        \{\
+            printf("* ");\
+        \}\
+        printf("\\n");\
+        for(j=1; j<=2 && i!=n; j++)\
+        \{\
+            printf("* ");\
+        \}\
+        printf("\\n");\
+    \}\
+\}\
+\
+\
+
+\f0\fs26 \cf0 \kerning1\expnd0\expndtw0 \
+\
+30).\
+\
+* \
+* \
+* * * \
+* * \
+* * \
+* * * * * * \
+* * * \
+* * * \
+* * * * * * * * *. \
+\
+#include <stdio.h>\
+\
+void main() \
+\{\
+    int n=3, i, j, k,l;\
+    for(i=1; i<=n; i++)\
+    \{\
+        for(j=1; j<=2; j++)\
+        \{\
+            for(k=1; k<=i; k++)\
+            \{\
+                printf("* ");\
+            \}\
+            printf("\\n");\
+        \}\
+        for(j=1; j<=3*i; j++)\
+        \{\
+            printf("* ");\
+        \}\
+        printf("\\n");\
+    \}\
+\} }
